@@ -2174,14 +2174,14 @@ DD .mwInput.Multiple {
 .testimonialOpen {
     position: absolute;
     top: -7%;
-    left: -7%;
+    left: 2%;
     z-index: 44;
 }
 
 .testimonialClose {
     position: absolute;
     bottom: -7%;
-    right: -7%;
+    right: 2%;
     z-index: 44;
 }
 
