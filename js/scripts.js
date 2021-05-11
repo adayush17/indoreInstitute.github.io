@@ -31,18 +31,10 @@ $(document).ready(function() {
     jQuery('.Menu ul li').click(function() {
 
         jQuery(this).toggleClass('openit');
-
-
     });
-
-
 });
 
-
-
 jQuery(document).ready(function(jQuery) {
-
-
 
 });
 
@@ -201,20 +193,33 @@ jQuery(document).ready(function() {
     });
 });
 
-// // Video Popup
-// jQuery(document).ready(function() {
-//     jQuery('.popup2').magnificPopup({
-//         disableOn: 700,
-//         type: 'iframe',
-//         mainClass: 'mfp-fade',
-//         removalDelay: 160,
-//         preloader: false,
-//         fixedContentPos: false
-//     });
-// });
 
 
+// read more text
 
+const content = document.querySelector(".content-inner");
+const contentFull = document.querySelector(".content-full");
+const more = document.querySelector(".read-more");
+let open = false;
+
+if (more) {
+  more.addEventListener("click", (e) => {
+    if (open) {
+      content.removeAttribute("style");
+      e.target.innerText = "Read more";
+
+      open = false;
+    } else {
+      content.style.maxHeight = `${contentFull.clientHeight}px`;
+      e.target.innerText = "Read less";
+
+      open = true;
+    }
+  });
+}
+
+  
+  
 
 
 
