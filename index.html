@@ -88,8 +88,13 @@
 
 </head>
 
-<body>
+<body onload="myFunction()">
 
+    <!-- Preloader -->
+    <div id="preload ">
+        <img class="bus" src="./images/bus.png" alt="">
+        <img class="road" src="./images/road.jpg" alt="">
+    </div>
 
     <!-- End Google Tag Manager (noscript) -->
     <div class="mobileIcon trans"> <span class="trans"></span> <span></span> <span class="trans"></span> </div>
@@ -246,7 +251,7 @@
         <div class="headerWrap trans">
             <div class="header">
                 <div class="headerLeft">
-                    <div class="logo"><a href="/"><img src="./images/Banner Logo.png"
+                    <div class="logo"><a href="/"><img src="./images/main_logo.png"
                                 alt="Indore Institute | Indore Institute" /></a></div>
                 </div>
                 <div class="headerRight">
@@ -310,7 +315,7 @@
                             <p>Explore a range of majors and minors with nearly limitless opportunities to launch your
                                 career. </p>
                         </a> </div>
-                    <div class="gradhov"><a href="#"><img src="./images/ug.png" alt="Graduate Programs" />
+                    <div class="gradhov"><a href="#"><img src="./images/ug.jpg" alt="Graduate Programs" />
                             <h5>Undergraduate Programs</h5>
                             <p>Kick start your professional career with one of our specially designed undergrad programs
                                 in your favorite majors. </p>
@@ -382,11 +387,11 @@
             <div class="mainContentArea">
                 <div class="megaMenu">
 
-                    <div class="gradhov"> <a href="#"> <img src="./images/infra_2.png" alt="Campus Life" />
+                    <div class="gradhov"> <a href="#"> <img src="./images/infra_2.jpg" alt="Campus Life" />
                             <h5>Campus Life</h5>
                             <p>You’re not just choosing a college — you’re choosing a home.</p>
                         </a> </div>
-                    <div><a href="#"><img src="./images/iist_building_4.png" alt="Visit Us" />
+                    <div><a href="#"><img src="./images/iist_building_4.jpg" alt="Visit Us" />
                             <h5>Visit Us</h5>
                             <p>The best way to know if Indore Institute is the right college for you is to come visit!
                             </p>
@@ -530,20 +535,17 @@
                 <div class="box box1">
                     <h2 class="name">Indore Institute Of Science And Technology</h2>
                     <a href="" class="visit">Visit Now</a>
-                    <div class="circle"></div>
-                    <img src="./images/i1.png" alt="" class="institute">
+                    <img src="./images/i1.png" alt="" class="institute" style="margin-top: -12px;">
                 </div>
                 <div class="box box2">
                     <h2 class="name">Indore Institute Of Pharmasy</h2>
                     <a href="" class="visit">Visit Now</a>
-                    <div class="circle"></div>
-                    <img src="./images/i2.png" alt="" class="institute">
+                    <img src="./images/i2.png" alt="" class="institute" style="height: 160px; margin-top: -15px;">
                 </div>
                 <div class="box box3">
                     <h2 class="name">Indore Institute Of Management And Research</h2>
                     <a href="" class="visit">Visit Now</a>
-                    <div class="circle"></div>
-                    <img src="./images/i3.png" alt="" class="institute" style="height: 40%;">
+                    <img src="./images/i3.png" alt="" class="institute" style="margin-top: -10px;">
                 </div>
             </div>
 
@@ -653,7 +655,7 @@
                                             <div class="mwPageBlock File">
                                                 <div class="homeImageHoverWrapper trans teal">
                                                     <div class="homeImage trans"
-                                                        style="background:url(./images/ug.png) center center no-repeat; background-size: cover;">
+                                                        style="background:url(./images/ug.jpg) center center no-repeat; background-size: cover;">
                                                         <h4>Undergraduate Programs</h4>
                                                         <div class="postTwoGradient"></div>
                                                         <div class="homeImageColorbar trans"></div>
@@ -818,15 +820,12 @@
             <input type="radio" name="slider" id="s7">
             <input type="radio" name="slider" id="s8">
             <input type="radio" name="slider" id="s9">
-            <label for="s1" id="slide1"> <img src="./images/1.-ARUN-S-BHATNAGAR.png" alt=""></label>
-            <label for="s2" id="slide2"> <img src="./images/5794-548975.png" alt=""></label>
-            <label for="s3" id="slide3"> <img src="./images/kavisamellan31 (1).png" alt=""></label>
-            <label for="s4" id="slide4"> <img src="./images/kavisamellan21 (1).png" alt=""></label>
-            <label for="s5" id="slide5"> <img src="./images/sports16.png" alt=""></label>
-            <!-- <label for="s5" id="slide6">  <img src="./images/musicalevening6.png" alt=""></label>
-        <label for="s5" id="slide7">  <img src="./images/Dazzle 1.png" alt=""></label>
-        <label for="s5" id="slide8">  <img src="./images/Dazzle 10.png" alt=""></label>
-        <label for="s5" id="slide9">  <img src="./images/image (1).png" alt=""></label> -->
+            <label for="s1" id="slide1"> <img src="./images/1.-ARUN-S-BHATNAGAR.jpg" alt=""></label>
+            <label for="s2" id="slide2"> <img src="./images/5794-548975.jpg" alt=""></label>
+            <label for="s3" id="slide3"> <img src="./images/kavisamellan31 (1).jpg" alt=""></label>
+            <label for="s4" id="slide4"> <img src="./images/kavisamellan21 (1).jpg" alt=""></label>
+            <label for="s5" id="slide5"> <img src="./images/sports16.jpg" alt=""></label>
+         
         </div>
     </section>
 
@@ -1397,6 +1396,15 @@
             max: 25,
             speed: 400
         });
+    </script>
+
+     <!-- Preloader -->
+     <script>
+
+        const preloader = document.getElementById('preload');
+        function myFunction(){
+        preloader.style.display = 'none';
+        }
     </script>
 
 

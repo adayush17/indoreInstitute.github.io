@@ -69,6 +69,36 @@ a:hover,
 
 /** .transSlow { -webkit-transition: all 0.9s ease; -moz-transition: all 0.9s ease; -o-transition: all 0.9s ease; } **/
 
+/* Preloader */
+#preload{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+.road{
+    width: 25%;
+     margin-top: -135px;
+}
+.bus{
+    width: 11%;
+    animation: bus 0.2s ease infinite alternate;
+}
+@keyframes bus{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+
 /**** Header ****/
 
 /*  header  */
