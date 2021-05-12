@@ -70,7 +70,7 @@ a:hover,
 /** .transSlow { -webkit-transition: all 0.9s ease; -moz-transition: all 0.9s ease; -o-transition: all 0.9s ease; } **/
 
 /* Preloader */
-#preload{
+/* #preload{
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,7 +96,7 @@ a:hover,
     to{
         transform: translateY(10px);
     }
-}
+} */
 
 
 /**** Header ****/
@@ -2960,5 +2960,4 @@ DD .mwInput.Multiple {
     border-radius: 7px;
     color: white
   }
-  
   
