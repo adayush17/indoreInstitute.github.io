@@ -1407,6 +1407,27 @@
         }
     </script>
 
+    <!-- Annyang -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <script>
+        if (annyang) {
+          var commands = {
+            'play video': function() {
+              document.getElementById('myVideo').play();
+            },
+            'pause video': function() {
+              document.getElementById('myVideo').pause();
+            },
+          };
+        
+          // Add our commands to annyang
+          annyang.addCommands(commands);
+        
+          // Start listening. You can call this here, or attach this call to an event, button, etc.
+          annyang.start();
+        }
+        </script>
+
 
 </body>
 
