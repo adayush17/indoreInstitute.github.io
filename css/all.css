@@ -713,6 +713,7 @@ input.searchIconA {
     color: #012ca1e7;
 }
 
+
 /**** Buttons ****/
 
 /*  Button  */
@@ -2890,6 +2891,7 @@ DD .mwInput.Multiple {
     transform-style: preserve-3d;
     transform: translate3d(-50%,0,75px);
     color: #fff;
+    font-size: 15px;
     background: #333;
     padding: 10px 25px;
     border-radius: 30px;
